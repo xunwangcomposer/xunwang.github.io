@@ -4,156 +4,374 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Xun Wang | Composer</title>
 
     <meta name="description"
-        content="Official portfolio of composer Xun Wang. Contemporary classical music, scores, recordings, biography and works.">
+          content="Official portfolio of composer Xun Wang. Contemporary classical music, scores, recordings, biography and works.">
 
     <meta name="keywords"
-        content="Xun Wang, Composer, Manhattan School of Music, Composition, Contemporary Music">
+          content="Xun Wang, Composer, Manhattan School of Music, Contemporary Music, Portfolio">
 
-    <meta name="author" content="Xun Wang">
+    <meta name="author"
+          content="Xun Wang">
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon"
+          href="favicon.ico">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Great+Vibes&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <!-- Handwriting -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="css/style.css">
 
-    <link rel="stylesheet" href="css/glass.css">
+    <link rel="stylesheet"
+          href="css/glass.css">
 
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet"
+          href="css/animation.css">
 
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet"
+          href="css/responsive.css">
 
 </head>
 
 <body>
 
-    <!-- Background -->
+<!-- ===================================================== -->
+<!-- Background                                             -->
+<!-- ===================================================== -->
 
-    <div class="background-layer">
+<div class="background-layer">
 
-        <div class="background-overlay"></div>
+    <img src="assets/images/background.jpg"
+         class="background-image"
+         alt="Background">
 
-        <div class="background-image"></div>
+    <div class="background-light"></div>
 
-        <div class="floating-particles"></div>
+    <div class="background-overlay"></div>
+
+    <div class="background-noise"></div>
+
+</div>
+
+<!-- Floating Petals -->
+
+<div id="petals">
+
+</div>
+
+<!-- Bloom -->
+
+<div class="hero-bloom"></div>
+
+<!-- ===================================================== -->
+<!-- Header                                                 -->
+<!-- ===================================================== -->
+
+<header class="top-bar">
+
+    <button class="menu-button">
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+    </button>
+
+    <div class="top-right">
+
+        <button id="soundButton">
+
+            <i class="fa-solid fa-volume-high"></i>
+
+        </button>
+
+        <button id="themeButton">
+
+            <i class="fa-regular fa-moon"></i>
+
+        </button>
 
     </div>
 
-    <!-- Top Icons -->
+</header>
 
-    <header class="top-bar">
+<!-- ===================================================== -->
+<!-- Hero                                                   -->
+<!-- ===================================================== -->
 
-        <div class="menu-icon">
+<main class="hero">
 
-            ☰
+    <section class="hero-left">
+
+        <div class="hero-content fade-up">
+
+            <h1 class="hero-name">
+
+                Xun Wang
+
+            </h1>
+
+            <h2 class="hero-title">
+
+                COMPOSER
+
+            </h2>
+
+            <div class="hero-divider"></div>
+
+            <p class="hero-description">
+
+                Creating music that speaks<br>
+                between silence and sound.
+
+            </p>
+                        <!-- ========================= -->
+            <!-- Glass Menu -->
+            <!-- ========================= -->
+
+            <nav class="glass-menu">
+
+                <ul>
+
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="biography.html">Biography</a>
+                    </li>
+
+                    <li>
+                        <a href="works.html">Works</a>
+                    </li>
+
+                    <li>
+                        <a href="cv.html">CV</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="social-icons">
+
+                    <a href="https://youtube.com/"
+                       target="_blank"
+                       aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                    <a href="https://instagram.com/"
+                       target="_blank"
+                       aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="mailto:your@email.com"
+                       aria-label="Email">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </nav>
 
         </div>
 
-        <div class="top-right-icons">
+    </section>
 
-            <button id="soundButton">
+    <!-- ================================= -->
+    <!-- Right Hero -->
+    <!-- ================================= -->
 
-                ♫
+    <section class="hero-right">
 
-            </button>
+        <div class="hero-art">
 
-            <button id="themeButton">
+            <div class="hero-glow"></div>
 
-                ☾
-
-            </button>
+            <div class="hero-shadow"></div>
 
         </div>
 
-    </header>
+    </section>
 
-    <!-- Hero -->
+</main>
 
-    <main class="hero">
+<!-- ========================= -->
+<!-- Scroll -->
+<!-- ========================= -->
 
-        <!-- Left Panel -->
+<div class="scroll-indicator">
 
-        <section class="hero-left">
+    <span>
 
-            <div class="hero-content fade-in">
+        SCROLL
 
-                <h1 class="hero-name">
+    </span>
 
-                    Xun Wang
+    <div class="scroll-line"></div>
 
-                </h1>
+</div>
 
-                <h2 class="hero-title">
+<!-- ========================= -->
+<!-- Footer -->
+<!-- ========================= -->
 
-                    COMPOSER
+<footer class="copyright">
 
-                </h2>
+    © 2026 Xun Wang. All rights reserved.
 
-                <div class="hero-divider"></div>
+</footer>
+<!-- ===================================== -->
+<!-- Background Music -->
+<!-- ===================================== -->
 
-                <p class="hero-description">
+<audio id="backgroundMusic"
+       loop
+       preload="auto">
 
-                    Creating music that speaks
-                    <br>
-                    between silence and sound.
+    <source src="assets/audio/background.mp3"
+            type="audio/mpeg">
 
-                </p>
+</audio>
 
-                <!-- Glass Menu -->
+<!-- ===================================== -->
+<!-- Page Loader -->
+<!-- ===================================== -->
 
-                <nav class="glass-menu">
+<div id="loader">
 
-                    <ul>
+    <div class="loader-circle"></div>
 
-                        <li>
+    <div class="loader-text">
 
-                            <a href="index.html">
+        Xun Wang
 
-                                Home
+    </div>
 
-                            </a>
+</div>
 
-                        </li>
+<!-- ===================================== -->
+<!-- Custom Cursor -->
+<!-- ===================================== -->
 
-                        <li>
+<div class="cursor"></div>
 
-                            <a href="biography.html">
+<div class="cursor-blur"></div>
 
-                                Biography
+<!-- ===================================== -->
+<!-- Decorative Layers -->
+<!-- ===================================== -->
 
-                            </a>
+<div class="ambient-light light-one"></div>
 
-                        </li>
+<div class="ambient-light light-two"></div>
 
-                        <li>
+<div class="ambient-light light-three"></div>
 
-                            <a href="works.html">
+<!-- ===================================== -->
+<!-- Hidden Hero Overlay -->
+<!-- ===================================== -->
 
-                                Works
+<div class="hero-mask"></div>
 
-                            </a>
+<!-- ===================================== -->
+<!-- Scripts -->
+<!-- ===================================== -->
 
-                        </li>
+<script src="js/main.js"></script>
 
-                        <li>
+<script src="js/menu.js"></script>
 
-                            <a href="cv.html">
+<script src="js/theme.js"></script>
 
-                                CV
+<script src="js/parallax.js"></script>
 
-                            </a>
+<script src="js/petals.js"></script>
 
-                        </li>
+<script src="js/animation.js"></script>
+
+<!-- ===================================== -->
+<!-- Initialize -->
+<!-- ===================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+    if(typeof initTheme==="function"){
+
+        initTheme();
+
+    }
+
+    if(typeof initMenu==="function"){
+
+        initMenu();
+
+    }
+
+    if(typeof initParallax==="function"){
+
+        initParallax();
+
+    }
+
+    if(typeof createPetals==="function"){
+
+        createPetals();
+
+    }
+
+    if(typeof pageAnimation==="function"){
+
+        pageAnimation();
+
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>
