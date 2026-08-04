@@ -1,0 +1,305 @@
+/*==================================================
+    Xun Wang Composer Portfolio
+    glass.css
+==================================================*/
+
+
+/*======================================
+    Glass Menu
+======================================*/
+
+.glass-menu{
+
+    position:relative;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(28px);
+
+    -webkit-backdrop-filter:blur(28px);
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.22);
+
+    border-radius:30px;
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.12),
+
+        inset 0 1px 1px rgba(255,255,255,.45);
+
+}
+
+
+/*======================================
+    Glass Reflection
+======================================*/
+
+.glass-menu::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-40%;
+
+    top:-60%;
+
+    width:140%;
+
+    height:140%;
+
+    background:
+
+        linear-gradient(
+
+            120deg,
+
+            rgba(255,255,255,.45),
+
+            rgba(255,255,255,.08),
+
+            transparent
+
+        );
+
+    transform:rotate(20deg);
+
+    pointer-events:none;
+
+}
+
+
+/*======================================
+    Glass Noise
+======================================*/
+
+.glass-menu::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.08;
+
+    mix-blend-mode:overlay;
+
+    background:
+
+        radial-gradient(circle,
+        rgba(255,255,255,.35) 1px,
+        transparent 1px);
+
+    background-size:6px 6px;
+
+}
+
+
+/*======================================
+    Hover
+======================================*/
+
+.glass-menu:hover{
+
+    background:rgba(255,255,255,.13);
+
+    border-color:rgba(255,255,255,.30);
+
+    box-shadow:
+
+        0 25px 70px rgba(0,0,0,.15),
+
+        inset 0 1px 2px rgba(255,255,255,.5);
+
+}
+
+
+/*======================================
+    Divider
+======================================*/
+
+.glass-menu li{
+
+    transition:.35s;
+
+}
+
+
+.glass-menu li:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+
+/*======================================
+    Menu Link
+======================================*/
+
+.glass-menu a{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/*======================================
+    Active Dot
+======================================*/
+
+.glass-menu li.active::before{
+
+    content:"";
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+
+        0 0 8px white,
+
+        0 0 18px rgba(255,255,255,.6);
+
+}
+
+
+/*======================================
+    Social Icons
+======================================*/
+
+.social-icons{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+.social-icons a{
+
+    backdrop-filter:blur(15px);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+
+.social-icons a:hover{
+
+    background:rgba(255,255,255,.18);
+
+    transform:translateY(-4px);
+
+}
+
+
+/*======================================
+    Scroll
+======================================*/
+
+.scroll-line{
+
+    background:
+
+        linear-gradient(
+
+            transparent,
+
+            rgba(255,255,255,.85),
+
+            transparent
+
+        );
+
+}
+
+
+/*======================================
+    Bloom
+======================================*/
+
+.hero-bloom{
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    right:-120px;
+
+    top:-100px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(circle,
+
+        rgba(255,255,255,.38),
+
+        rgba(255,255,255,.08),
+
+        transparent);
+
+    filter:blur(90px);
+
+    pointer-events:none;
+
+}
+
+
+/*======================================
+    Hero Glow
+======================================*/
+
+.hero-glow{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(circle,
+
+        rgba(255,255,255,.20),
+
+        transparent 70%);
+
+}
+
+
+/*======================================
+    Glass Border
+======================================*/
+
+.hero-art{
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+}
