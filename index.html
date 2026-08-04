@@ -62,30 +62,22 @@
 <!-- ===================================================== -->
 <!-- Background                                             -->
 <!-- ===================================================== -->
-
 <div class="background-layer">
 
-    <img src="assets/images/background.jpg"
-         class="background-image"
-         alt="Background">
+    <img
+        class="background-image"
+        src="assets/images/background.jpg"
+        alt="Background">
 
-    <div class="background-light"></div>
+    <div class="hero-bloom"></div>
+
+    <div id="petals"></div>
 
     <div class="background-overlay"></div>
 
     <div class="background-noise"></div>
 
 </div>
-
-<!-- Floating Petals -->
-
-<div id="petals">
-
-</div>
-
-<!-- Bloom -->
-
-<div class="hero-bloom"></div>
 
 <!-- ===================================================== -->
 <!-- Header                                                 -->
@@ -218,21 +210,23 @@
 
     </section>
 
-    <!-- ================================= -->
-    <!-- Right Hero -->
-    <!-- ================================= -->
+<!-- ================================= -->
+<!-- Right Hero -->
+<!-- ================================= -->
 
-    <section class="hero-right">
+<section class="hero-right">
 
-        <div class="hero-art">
+    <div class="hero-art">
 
-            <div class="hero-glow"></div>
+        <!-- Bloom -->
+        <div class="hero-glow"></div>
 
-            <div class="hero-shadow"></div>
+        <!-- Shadow -->
+        <div class="hero-shadow"></div>
 
-        </div>
+    </div>
 
-    </section>
+</section>
 
 </main>
 
@@ -314,58 +308,48 @@
 
 <div class="hero-mask"></div>
 
-<!-- ===================================== -->
+<!-- ============================================== -->
 <!-- Scripts -->
-<!-- ===================================== -->
+<!-- ============================================== -->
 
 <script src="js/main.js"></script>
-
 <script src="js/menu.js"></script>
-
 <script src="js/theme.js"></script>
-
 <script src="js/parallax.js"></script>
-
 <script src="js/petals.js"></script>
-
 <script src="js/animation.js"></script>
 
-<!-- ===================================== -->
+<!-- ============================================== -->
 <!-- Initialize -->
-<!-- ===================================== -->
+<!-- ============================================== -->
 
 <script>
 
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
-    if(typeof initTheme==="function"){
-
+    // Theme
+    if (typeof initTheme === "function") {
         initTheme();
-
     }
 
-    if(typeof initMenu==="function"){
-
+    // Menu
+    if (typeof initMenu === "function") {
         initMenu();
-
     }
 
-    if(typeof initParallax==="function"){
-
+    // Mouse Parallax
+    if (typeof initParallax === "function") {
         initParallax();
-
     }
 
-    if(typeof createPetals==="function"){
-
+    // Floating Petals
+    if (typeof createPetals === "function") {
         createPetals();
-
     }
 
-    if(typeof pageAnimation==="function"){
-
+    // Page Animation
+    if (typeof pageAnimation === "function") {
         pageAnimation();
-
     }
 
 });
@@ -373,5 +357,4 @@ document.addEventListener("DOMContentLoaded",()=>{
 </script>
 
 </body>
-
 </html>
