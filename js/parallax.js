@@ -1,0 +1,1 @@
+document.addEventListener('mousemove',e=>{const h=document.querySelector('.hero');if(!h)return;h.style.backgroundPosition=`${50+(e.clientX/window.innerWidth-.5)*2}% ${50+(e.clientY/window.innerHeight-.5)*2}%`;});

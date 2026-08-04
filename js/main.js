@@ -1,0 +1,1 @@
+document.documentElement.style.scrollBehavior='smooth';document.body.classList.add('fade');
