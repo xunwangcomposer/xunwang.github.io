@@ -1,27 +1,80 @@
-/* ==========================
-   Background
-========================== */
+/*==================================================
+    Xun Wang Composer Portfolio
+    style.css
+==================================================*/
 
-html,
-body{
+
+/*======================================
+    Root
+======================================*/
+
+:root{
+
+    --white:#ffffff;
+
+    --text:#ffffff;
+
+    --light:#dfeef8;
+
+    --glass:rgba(255,255,255,.14);
+
+    --glass-border:rgba(255,255,255,.22);
+
+    --shadow:0 20px 60px rgba(0,0,0,.18);
+
+    --blur:22px;
+
+    --blue:#8fc3ea;
+
+    --transition:.45s ease;
+
+}
+
+
+/*======================================
+    Reset
+======================================*/
+
+*{
 
     margin:0;
 
     padding:0;
 
-    width:100%;
-
-    height:100%;
-
-    overflow:hidden;
-
-    background:#d7ecf5;
-
-    font-family:Inter,sans-serif;
+    box-sizing:border-box;
 
 }
 
-.hero-background{
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    font-family:"Inter",sans-serif;
+
+    background:#c8e1f3;
+
+    color:var(--text);
+
+}
+
+
+/*======================================
+    Background
+======================================*/
+
+.background-layer{
 
     position:fixed;
 
@@ -31,11 +84,10 @@ body{
 
     z-index:-10;
 
-    background:#d7ecf5;
-
 }
 
-.hero-background img{
+
+.background-image{
 
     position:absolute;
 
@@ -45,21 +97,49 @@ body{
 
     width:78vw;
 
-    max-width:1100px;
+    max-width:1200px;
 
     transform:translate(-50%,-50%);
 
     object-fit:contain;
 
+    animation:float 14s ease-in-out infinite;
+
     user-select:none;
 
     pointer-events:none;
 
-    animation:float 12s ease-in-out infinite;
-
 }
 
-.background-blur{
+
+/* Bloom */
+
+.background-light{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(circle at 25% 18%,
+        rgba(255,255,255,.45),
+        transparent 28%),
+
+        radial-gradient(circle at 75% 65%,
+        rgba(255,255,255,.18),
+        transparent 38%);
+
+    filter:blur(45px);
+
+    opacity:.85;
+
+}
+/*======================================
+    Overlay
+======================================*/
+
+.background-overlay{
 
     position:absolute;
 
@@ -69,26 +149,416 @@ body{
 
     -webkit-backdrop-filter:blur(6px);
 
+    background:rgba(255,255,255,.04);
+
+}
+
+
+/*======================================
+    Hero
+======================================*/
+
+.hero{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    width:100%;
+
+    height:100vh;
+
+    padding:60px 70px;
+
+    z-index:5;
+
+}
+
+
+/*======================================
+    Left
+======================================*/
+
+.hero-left{
+
+    width:420px;
+
+    display:flex;
+
+    align-items:center;
+
+    z-index:20;
+
+}
+
+
+.hero-content{
+
+    width:100%;
+
+}
+
+
+/*======================================
+    Right
+======================================*/
+
+.hero-right{
+
+    flex:1;
+
+    position:relative;
+
+    height:100%;
+
+}
+
+
+.hero-art{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+/*======================================
+    Hero Typography
+======================================*/
+
+.hero-name{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:88px;
+
+    font-weight:400;
+
+    color:#fff;
+
+    line-height:1;
+
+    letter-spacing:1px;
+
+    text-shadow:
+
+        0 10px 35px rgba(255,255,255,.18);
+
+}
+
+
+.hero-title{
+
+    margin-top:28px;
+
+    font-size:18px;
+
+    letter-spacing:10px;
+
+    font-weight:300;
+
+    color:rgba(255,255,255,.9);
+
+}
+/*======================================
+    Divider
+======================================*/
+
+.hero-divider{
+
+    width:42px;
+
+    height:2px;
+
+    margin:30px 0;
+
+    background:rgba(255,255,255,.9);
+
+    border-radius:20px;
+
+}
+
+
+/*======================================
+    Description
+======================================*/
+
+.hero-description{
+
+    color:rgba(255,255,255,.92);
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    font-weight:300;
+
+    letter-spacing:.4px;
+
+    margin-bottom:38px;
+
+}
+
+
+/*======================================
+    Glass Menu
+======================================*/
+
+.glass-menu{
+
+    width:320px;
+
+    padding:30px;
+
+    border-radius:32px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(30px);
+
+    -webkit-backdrop-filter:blur(30px);
+
+    border:1px solid rgba(255,255,255,.22);
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.12),
+
+        inset 0 1px 1px rgba(255,255,255,.45);
+
+}
+
+
+/*======================================
+    Menu List
+======================================*/
+
+.glass-menu ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+
+.glass-menu li{
+
+    position:relative;
+
+    border-bottom:1px solid rgba(255,255,255,.16);
+
+}
+
+
+.glass-menu li:last-child{
+
+    border:none;
+
+}
+
+
+/*======================================
+    Menu Link
+======================================*/
+
+.glass-menu a{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:300;
+
+    padding:22px 8px;
+
+    transition:.35s;
+
+}
+/*======================================
+    Menu Hover
+======================================*/
+
+.glass-menu a:hover{
+
+    padding-left:18px;
+
+    color:#ffffff;
+
+    letter-spacing:1px;
+
+}
+
+.glass-menu li:hover{
+
     background:rgba(255,255,255,.05);
 
 }
 
-/* ==========================
-   Floating Animation
-========================== */
 
-@keyframes float {
+/*======================================
+    Active Dot
+======================================*/
 
-    0% {
-        transform: translate(-50%, -50%) translateY(0px);
-    }
+.glass-menu li.active a::after{
 
-    50% {
-        transform: translate(-50%, -51%) translateY(-8px);
-    }
+    content:"";
 
-    100% {
-        transform: translate(-50%, -50%) translateY(0px);
-    }
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+
+        0 0 12px rgba(255,255,255,.9),
+
+        0 0 24px rgba(255,255,255,.5);
+
+    position:absolute;
+
+    right:10px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+
+/*======================================
+    Social Icons
+======================================*/
+
+.social-icons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:30px;
+
+}
+
+
+.social-icons a{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    transition:.35s;
+
+}
+
+
+.social-icons a:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,.12);
+
+    box-shadow:
+
+        0 8px 30px rgba(255,255,255,.15);
+
+}
+
+
+/*======================================
+    Scroll Indicator
+======================================*/
+
+.scroll-indicator{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:40px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    color:white;
+
+    letter-spacing:8px;
+
+    font-size:12px;
+
+    opacity:.85;
+
+}
+
+
+.scroll-line{
+
+    margin-top:18px;
+
+    width:1px;
+
+    height:80px;
+
+    background:rgba(255,255,255,.7);
+
+}
+
+
+/*======================================
+    Footer
+======================================*/
+
+.footer{
+
+    position:fixed;
+
+    right:40px;
+
+    bottom:35px;
+
+    color:rgba(255,255,255,.75);
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    z-index:20;
 
 }
