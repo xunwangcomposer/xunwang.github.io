@@ -1,1 +1,47 @@
-@media(max-width:768px){.hero{padding:20px}nav{flex-wrap:wrap;left:20px;right:20px}}
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:768px){
+
+.hero{
+
+    padding-top:90px;
+
+}
+
+.hero-left{
+
+    margin-top:50px;
+
+}
+
+.hero-name{
+
+    font-size:72px;
+
+    line-height:.95;
+
+}
+
+.hero-title{
+
+    font-size:18px;
+
+    letter-spacing:8px;
+
+}
+
+.hero-description{
+
+    margin-top:20px;
+
+}
+
+.glass-menu{
+
+    margin-top:25px;
+
+}
+
+}
