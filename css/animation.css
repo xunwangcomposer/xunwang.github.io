@@ -1,0 +1,349 @@
+/*==================================================
+    Xun Wang Composer Portfolio
+    animation.css
+==================================================*/
+
+
+/*======================================
+    Page Fade In
+======================================*/
+
+body{
+
+    animation:pageFade 1.2s ease forwards;
+
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/*======================================
+    Hero Fade Up
+======================================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:fadeUp 1.4s ease forwards;
+
+    animation-delay:.25s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*======================================
+    Background Floating
+======================================*/
+
+.background-image{
+
+    animation:
+
+        backgroundFloat 18s ease-in-out infinite;
+
+}
+
+@keyframes backgroundFloat{
+
+    0%{
+
+        transform:
+        translate(-50%,-50%)
+        translateY(0px)
+        scale(1);
+
+    }
+
+    50%{
+
+        transform:
+        translate(-50%,-51%)
+        translateY(-10px)
+        scale(1.02);
+
+    }
+
+    100%{
+
+        transform:
+        translate(-50%,-50%)
+        translateY(0px)
+        scale(1);
+
+    }
+
+}
+
+
+/*======================================
+    Bloom Breathing
+======================================*/
+
+.hero-bloom{
+
+    animation:bloom 8s ease-in-out infinite;
+
+}
+
+@keyframes bloom{
+
+    0%{
+
+        opacity:.55;
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        opacity:.95;
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        opacity:.55;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/*======================================
+    Menu Hover
+======================================*/
+
+.glass-menu a{
+
+    transition:
+
+        .35s ease;
+
+}
+
+.glass-menu a:hover{
+
+    transform:translateX(8px);
+
+}
+
+
+/*======================================
+    Social Icons
+======================================*/
+
+.social-icons a{
+
+    transition:
+
+        .35s ease;
+
+}
+
+.social-icons a:hover{
+
+    transform:
+
+        translateY(-5px)
+
+        scale(1.08);
+
+}
+
+
+/*======================================
+    Scroll Line
+======================================*/
+
+.scroll-line{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.scroll-line::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:white;
+
+    animation:scrollMove 2.6s infinite;
+
+}
+
+@keyframes scrollMove{
+
+    from{
+
+        top:-100%;
+
+    }
+
+    to{
+
+        top:100%;
+
+    }
+
+}
+
+
+/*======================================
+    Hero Name
+======================================*/
+
+.hero-name{
+
+    animation:
+
+        heroFloat 6s ease-in-out infinite;
+
+}
+
+@keyframes heroFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-4px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*======================================
+    Glass Reflection
+======================================*/
+
+.glass-menu::before{
+
+    animation:
+
+        glassReflection 7s linear infinite;
+
+}
+
+@keyframes glassReflection{
+
+    from{
+
+        transform:
+
+            rotate(20deg)
+
+            translateX(-120%);
+
+    }
+
+    to{
+
+        transform:
+
+            rotate(20deg)
+
+            translateX(120%);
+
+    }
+
+}
+
+
+/*======================================
+    Hero Glow
+======================================*/
+
+.hero-glow{
+
+    animation:
+
+        glow 10s ease infinite;
+
+}
+
+@keyframes glow{
+
+    0%{
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        opacity:.55;
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+    }
+
+}
