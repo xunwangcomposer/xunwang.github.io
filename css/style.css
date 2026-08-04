@@ -145,11 +145,11 @@ body{
 
     inset:0;
 
-    backdrop-filter:blur(6px);
+    backdrop-filter:blur(1px);
 
-    -webkit-backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(1px);
 
-    background:rgba(255,255,255,.04);
+    background:rgba(255,255,255,.02);
 
 }
 
