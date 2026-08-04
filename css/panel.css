@@ -1,0 +1,156 @@
+/*==================================================
+    Sliding Content Panel
+==================================================*/
+
+.content-panel{
+
+    position:absolute;
+
+    top:60px;
+
+    right:60px;
+
+    width:58vw;
+
+    height:82vh;
+
+    border-radius:36px;
+
+    overflow:hidden;
+
+    z-index:40;
+
+    transform:translateX(120%);
+
+    opacity:0;
+
+    transition:
+
+        transform .8s cubic-bezier(.22,.61,.36,1),
+
+        opacity .45s;
+
+}
+
+
+/*=============================
+    Open
+=============================*/
+
+.content-panel.active{
+
+    transform:translateX(0);
+
+    opacity:1;
+
+}
+
+
+/*=============================
+    Glass
+=============================*/
+
+.panel-glass{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.12),
+
+        inset 0 1px 1px rgba(255,255,255,.4);
+
+}
+
+
+/*=============================
+    Content
+=============================*/
+
+.panel-content{
+
+    position:relative;
+
+    z-index:3;
+
+    height:100%;
+
+    padding:60px;
+
+    overflow-y:auto;
+
+}
+
+
+/*=============================
+    Title
+=============================*/
+
+.panel-title{
+
+    font-size:44px;
+
+    font-weight:300;
+
+    color:white;
+
+    margin-bottom:40px;
+
+    letter-spacing:2px;
+
+}
+
+
+/*=============================
+    Close Button
+=============================*/
+
+.panel-close{
+
+    position:absolute;
+
+    top:30px;
+
+    right:35px;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:28px;
+
+    z-index:50;
+
+    transition:.3s;
+
+}
+
+.panel-close:hover{
+
+    background:rgba(255,255,255,.22);
+
+}
