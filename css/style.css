@@ -72,3 +72,23 @@ body{
     background:rgba(255,255,255,.05);
 
 }
+
+/* ==========================
+   Floating Animation
+========================== */
+
+@keyframes float {
+
+    0% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+
+    50% {
+        transform: translate(-50%, -51%) translateY(-8px);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+
+}
