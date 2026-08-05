@@ -192,11 +192,106 @@ function initPanel(){
 }
 
 /*======================================
+    Email Popup
+======================================*/
+
+function initEmailModal(){
+
+    const trigger=document.getElementById("emailTrigger");
+
+    const modal=document.getElementById("emailModal");
+
+    if(!trigger||!modal) return;
+
+    const closeBtn=modal.querySelector(".email-modal-close");
+
+    const copyPairs=[
+
+        {btn:document.getElementById("emailCopyBtn"),text:document.getElementById("emailAddress")},
+
+        {btn:document.getElementById("phoneCopyBtn"),text:document.getElementById("phoneNumber")}
+
+    ];
+
+    trigger.addEventListener("click",(e)=>{
+
+        e.preventDefault();
+
+        modal.classList.add("active");
+
+    });
+
+    function closeEmailModal(){
+
+        modal.classList.remove("active");
+
+    }
+
+    if(closeBtn){
+
+        closeBtn.addEventListener("click",closeEmailModal);
+
+    }
+
+    modal.addEventListener("click",(e)=>{
+
+        if(e.target===modal){
+
+            closeEmailModal();
+
+        }
+
+    });
+
+    document.addEventListener("keydown",(e)=>{
+
+        if(e.key==="Escape"){
+
+            closeEmailModal();
+
+        }
+
+    });
+
+    copyPairs.forEach(({btn,text})=>{
+
+        if(!btn||!text) return;
+
+        btn.addEventListener("click",()=>{
+
+            const value=text.textContent.trim();
+
+            navigator.clipboard.writeText(value).then(()=>{
+
+                btn.textContent="Copied";
+
+                btn.classList.add("copied");
+
+                setTimeout(()=>{
+
+                    btn.textContent="Copy";
+
+                    btn.classList.remove("copied");
+
+                },1800);
+
+            });
+
+        });
+
+    });
+
+}
+
+
+/*======================================
     Initialize
 ======================================*/
 
 document.addEventListener("DOMContentLoaded",()=>{
 
     initPanel();
+
+    initEmailModal();
 
 });

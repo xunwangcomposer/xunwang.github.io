@@ -178,4 +178,24 @@ body{
 
 }
 
+.panel-content{
+
+    padding:32px;
+
+}
+
+.panel-body{
+
+    flex-direction:column;
+
+}
+
+.panel-image{
+
+    flex:0 0 auto;
+
+    width:100%;
+
+}
+
 }
