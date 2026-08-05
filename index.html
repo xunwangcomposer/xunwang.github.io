@@ -135,21 +135,30 @@
 
                 <ul>
 
-                    <li class="active">
-                        <a href="index.html">Home</a>
-                    </li>
+                   <li class="active">
+    <a href="index.html">Home</a>
+</li>
 
-                    <li>
-                        <a href="biography.html">Biography</a>
-                    </li>
+<li>
+    <a href="#"
+       data-panel="biographyPanel">
+        Biography
+    </a>
+</li>
 
-                    <li>
-                        <a href="works.html">Works</a>
-                    </li>
+<li>
+    <a href="#"
+       data-panel="worksPanel">
+        Works
+    </a>
+</li>
 
-                    <li>
-                        <a href="cv.html">CV</a>
-                    </li>
+<li>
+    <a href="#"
+       data-panel="cvPanel">
+        CV
+    </a>
+</li>
 
                 </ul>
 
@@ -372,29 +381,28 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Theme
     if (typeof initTheme === "function") {
         initTheme();
     }
 
-    // Menu
     if (typeof initMenu === "function") {
         initMenu();
     }
 
-    // Mouse Parallax
     if (typeof initParallax === "function") {
         initParallax();
     }
 
-    // Floating Petals
     if (typeof createPetals === "function") {
         createPetals();
     }
 
-    // Page Animation
     if (typeof pageAnimation === "function") {
         pageAnimation();
+    }
+
+    if (typeof initPanel === "function") {
+        initPanel();
     }
 
 });
