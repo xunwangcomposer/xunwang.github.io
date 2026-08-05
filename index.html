@@ -47,6 +47,9 @@
           href="css/style.css">
 
     <link rel="stylesheet"
+          href="css/panel.css">
+
+    <link rel="stylesheet"
           href="css/glass.css">
 
     <link rel="stylesheet"
@@ -378,7 +381,7 @@
 
 <audio id="backgroundMusic"
        loop
-      preload="metadata"
+       preload="metadata">
 
     <source src="assets/audio/background.mp3"
             type="audio/mpeg">
@@ -430,11 +433,7 @@
 <!-- ============================================== -->
 
 <script src="js/main.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/theme.js"></script>
 <script src="js/parallax.js"></script>
-<script src="js/petals.js"></script>
-<script src="js/animation.js"></script>
 <script src="js/panel.js"></script>
 
 <!-- ============================================== -->
@@ -445,24 +444,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    if (typeof initTheme === "function") {
-        initTheme();
-    }
-
-    if (typeof initMenu === "function") {
-        initMenu();
-    }
-
     if (typeof initParallax === "function") {
         initParallax();
-    }
-
-    if (typeof createPetals === "function") {
-        createPetals();
-    }
-
-    if (typeof pageAnimation === "function") {
-        pageAnimation();
     }
 
     if (typeof initPanel === "function") {

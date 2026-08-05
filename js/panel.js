@@ -157,21 +157,25 @@ function initPanel(){
 
     links.forEach(link=>{
 
-        const text=link.textContent.trim().toLowerCase();
+        const panelId=link.getAttribute("data-panel");
 
-        if(text==="biography"){
+        if(panelId){
 
             link.addEventListener("click",(e)=>{
 
                 e.preventDefault();
 
-                openBiography();
+                openPanel(panelId);
 
             });
 
+            return;
+
         }
 
-        if(text==="home"){
+        // Links without a data-panel (i.e. "Home") just close the popup
+
+        if(link.getAttribute("href")==="index.html"){
 
             link.addEventListener("click",(e)=>{
 

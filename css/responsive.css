@@ -163,4 +163,19 @@ body{
 
 }
 
+/* Popup panel: menu is no longer beside it, so it can take the
+   full width and just sit below the top bar */
+
+.content-panel{
+
+    left:16px;
+
+    right:16px;
+
+    top:16px;
+
+    height:88vh;
+
+}
+
 }

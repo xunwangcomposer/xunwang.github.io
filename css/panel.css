@@ -8,9 +8,12 @@
 
     top:60px;
 
-    right:60px;
+    /* hero padding (70px) + hero-left width (420px) + gap (40px) =
+       the panel can never start before this, so it can never sit
+       under the left menu no matter how wide the viewport is */
+    left:530px;
 
-    width:58vw;
+    right:60px;
 
     height:82vh;
 
