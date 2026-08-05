@@ -172,6 +172,8 @@
                     <a href="https://www.youtube.com/@kiyuuuxun6233"
                        target="_blank"
                        rel="noopener"
+                       class="confirm-link"
+                       data-label="YouTube"
                        aria-label="YouTube">
 
                         <i class="fa-brands fa-youtube"></i>
@@ -181,6 +183,8 @@
                     <a href="https://www.instagram.com/rajwilg?igsh=YjQ2aXFjY2c4OHlt&utm_source=qr"
                        target="_blank"
                        rel="noopener"
+                       class="confirm-link"
+                       data-label="Instagram"
                        aria-label="Instagram">
 
                         <i class="fa-brands fa-instagram"></i>
@@ -403,18 +407,43 @@
 </div>
 
 <!-- ========================= -->
-<!-- Scroll -->
+<!-- External Link Confirm -->
 <!-- ========================= -->
 
-<div class="scroll-indicator">
+<div class="confirm-modal"
+     id="linkConfirmModal">
 
-    <span>
+    <div class="confirm-modal-card">
 
-        SCROLL
+        <div class="confirm-modal-text">
 
-    </span>
+            You're about to leave this site and open
+            <span id="confirmLinkName">this link</span>
+            in a new tab.
 
-    <div class="scroll-line"></div>
+        </div>
+
+        <div class="confirm-modal-actions">
+
+            <button
+                class="confirm-btn confirm-cancel"
+                id="confirmCancelBtn">
+
+                Cancel
+
+            </button>
+
+            <button
+                class="confirm-btn confirm-continue"
+                id="confirmContinueBtn">
+
+                Continue
+
+            </button>
+
+        </div>
+
+    </div>
 
 </div>
 

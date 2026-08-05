@@ -285,6 +285,93 @@ function initEmailModal(){
 
 
 /*======================================
+    External Link Confirmation
+======================================*/
+
+function initLinkConfirm(){
+
+    const modal=document.getElementById("linkConfirmModal");
+
+    if(!modal) return;
+
+    const nameEl=document.getElementById("confirmLinkName");
+
+    const cancelBtn=document.getElementById("confirmCancelBtn");
+
+    const continueBtn=document.getElementById("confirmContinueBtn");
+
+    let pendingUrl=null;
+
+    document.querySelectorAll(".confirm-link").forEach(link=>{
+
+        link.addEventListener("click",(e)=>{
+
+            e.preventDefault();
+
+            pendingUrl=link.getAttribute("href");
+
+            nameEl.textContent=link.getAttribute("data-label")||"this link";
+
+            modal.classList.add("active");
+
+        });
+
+    });
+
+    function closeConfirm(){
+
+        modal.classList.remove("active");
+
+        pendingUrl=null;
+
+    }
+
+    if(cancelBtn){
+
+        cancelBtn.addEventListener("click",closeConfirm);
+
+    }
+
+    if(continueBtn){
+
+        continueBtn.addEventListener("click",()=>{
+
+            if(pendingUrl){
+
+                window.open(pendingUrl,"_blank","noopener");
+
+            }
+
+            closeConfirm();
+
+        });
+
+    }
+
+    modal.addEventListener("click",(e)=>{
+
+        if(e.target===modal){
+
+            closeConfirm();
+
+        }
+
+    });
+
+    document.addEventListener("keydown",(e)=>{
+
+        if(e.key==="Escape"){
+
+            closeConfirm();
+
+        }
+
+    });
+
+}
+
+
+/*======================================
     Initialize
 ======================================*/
 
@@ -293,5 +380,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     initPanel();
 
     initEmailModal();
+
+    initLinkConfirm();
 
 });
