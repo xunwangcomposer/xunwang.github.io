@@ -59,7 +59,7 @@
 
     inset:0;
 
-    background:rgba(214,231,247,.94);
+    background:rgba(201,225,243,.95);
 
     backdrop-filter:blur(24px);
 
@@ -503,9 +503,9 @@
 
             150deg,
 
-            rgba(214,231,247,.94),
+            rgba(201,225,243,.95),
 
-            rgba(191,219,242,.90)
+            rgba(201,225,243,.90)
 
         );
 
@@ -1094,7 +1094,7 @@
 
     text-align:center;
 
-    background:rgba(214,231,247,.94);
+    background:rgba(201,225,243,.95);
 
     backdrop-filter:blur(24px);
 
@@ -1315,7 +1315,7 @@
 
     text-align:center;
 
-    background:rgba(214,231,247,.94);
+    background:rgba(201,225,243,.95);
 
     backdrop-filter:blur(24px);
 
