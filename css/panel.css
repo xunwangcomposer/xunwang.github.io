@@ -59,7 +59,7 @@
 
     inset:0;
 
-    background:rgba(58,110,165,.55);
+    background:rgba(214,231,247,.94);
 
     backdrop-filter:blur(24px);
 
@@ -141,7 +141,7 @@
 
 .panel-text p{
 
-    color:rgba(255,255,255,.92);
+    color:rgba(255,255,255,.96);
 
     font-size:17px;
 
@@ -149,7 +149,11 @@
 
     margin-bottom:18px;
 
-    text-shadow:0 2px 10px rgba(0,0,0,.35);
+    text-shadow:
+
+        0 1px 2px rgba(20,45,75,.55),
+
+        0 2px 14px rgba(20,45,75,.35);
 
 }
 
@@ -162,7 +166,9 @@
 
     text-transform:uppercase;
 
-    color:rgba(255,255,255,.7);
+    color:rgba(255,255,255,.95);
+
+    text-shadow:0 1px 3px rgba(20,45,75,.5);
 
     margin-bottom:10px;
 
@@ -173,11 +179,161 @@
 
     width:50px;
 
-    height:2px;
+    height:3px;
 
-    background:rgba(255,255,255,.8);
+    background:rgba(30,60,95,.45);
+
+    border-radius:2px;
 
     margin:18px 0 26px;
+
+}
+
+
+/*=============================
+    CV Content
+=============================*/
+
+.cv-heading{
+
+    font-size:20px;
+
+    font-weight:500;
+
+    color:#fff;
+
+    letter-spacing:1px;
+
+    margin:34px 0 14px;
+
+    text-shadow:
+
+        0 1px 2px rgba(20,45,75,.55),
+
+        0 2px 14px rgba(20,45,75,.3);
+
+}
+
+
+.cv-heading:first-of-type{
+
+    margin-top:0;
+
+}
+
+
+.cv-entry{
+
+    margin-bottom:22px;
+
+}
+
+
+.cv-entry-title{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#fff;
+
+    text-shadow:
+
+        0 1px 2px rgba(20,45,75,.55),
+
+        0 2px 12px rgba(20,45,75,.3);
+
+}
+
+
+.cv-entry-meta{
+
+    font-size:14px;
+
+    color:rgba(255,255,255,.88);
+
+    margin:3px 0 10px;
+
+    text-shadow:0 1px 3px rgba(20,45,75,.45);
+
+}
+
+
+.cv-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 6px;
+
+}
+
+
+.cv-list li{
+
+    position:relative;
+
+    padding-left:20px;
+
+    margin-bottom:10px;
+
+    color:rgba(255,255,255,.96);
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    text-shadow:
+
+        0 1px 2px rgba(20,45,75,.5),
+
+        0 2px 12px rgba(20,45,75,.3);
+
+}
+
+
+.cv-list li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:2px;
+
+    top:10px;
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:50%;
+
+    background:rgba(30,60,95,.6);
+
+}
+
+
+.cv-item-title{
+
+    display:block;
+
+    font-weight:600;
+
+}
+
+
+.cv-item-meta{
+
+    display:block;
+
+    font-size:14px;
+
+    color:rgba(255,255,255,.85);
+
+    margin-top:2px;
+
+    text-shadow:0 1px 3px rgba(20,45,75,.4);
 
 }
 
@@ -193,6 +349,12 @@
     font-weight:300;
 
     color:white;
+
+    text-shadow:
+
+        0 1px 3px rgba(20,45,75,.55),
+
+        0 3px 18px rgba(20,45,75,.35);
 
     margin-bottom:40px;
 
@@ -235,7 +397,7 @@
 
     line-height:1;
 
-    background:rgba(255,255,255,.12);
+    background:rgba(30,60,95,.28);
 
     display:flex;
 
@@ -257,7 +419,7 @@
 
 .panel-close:hover{
 
-    background:rgba(255,255,255,.22);
+    background:rgba(30,60,95,.42);
 
 }
 
@@ -341,9 +503,9 @@
 
             150deg,
 
-            rgba(58,110,165,.62),
+            rgba(214,231,247,.94),
 
-            rgba(84,145,196,.48)
+            rgba(191,219,242,.90)
 
         );
 
@@ -932,7 +1094,7 @@
 
     text-align:center;
 
-    background:rgba(58,110,165,.72);
+    background:rgba(214,231,247,.94);
 
     backdrop-filter:blur(24px);
 
@@ -986,7 +1148,7 @@
 
     line-height:1;
 
-    background:rgba(255,255,255,.12);
+    background:rgba(30,60,95,.28);
 
     color:white;
 
@@ -1001,7 +1163,7 @@
 
 .email-modal-close:hover{
 
-    background:rgba(255,255,255,.22);
+    background:rgba(30,60,95,.42);
 
 }
 
@@ -1014,7 +1176,9 @@
 
     text-transform:uppercase;
 
-    color:rgba(255,255,255,.6);
+    color:rgba(255,255,255,.95);
+
+    text-shadow:0 1px 3px rgba(20,45,75,.5);
 
     margin-bottom:14px;
 
@@ -1031,14 +1195,18 @@
 
     margin-bottom:26px;
 
-    text-shadow:0 2px 10px rgba(0,0,0,.35);
+    text-shadow:
+
+        0 1px 2px rgba(20,45,75,.55),
+
+        0 2px 14px rgba(20,45,75,.35);
 
 }
 
 
 .email-copy-btn{
 
-    border:1px solid rgba(255,255,255,.3);
+    border:1px solid rgba(30,60,95,.4);
 
     outline:none;
 
@@ -1050,7 +1218,7 @@
 
     border-radius:999px;
 
-    background:rgba(255,255,255,.1);
+    background:rgba(30,60,95,.22);
 
     color:#fff;
 
@@ -1067,14 +1235,14 @@
 
 .email-copy-btn:hover{
 
-    background:rgba(255,255,255,.2);
+    background:rgba(30,60,95,.34);
 
 }
 
 
 .email-copy-btn.copied{
 
-    background:rgba(255,255,255,.28);
+    background:rgba(30,60,95,.5);
 
 }
 
@@ -1088,7 +1256,7 @@
 
     height:1px;
 
-    background:rgba(255,255,255,.15);
+    background:rgba(30,60,95,.25);
 
     margin:26px 0;
 
@@ -1147,7 +1315,7 @@
 
     text-align:center;
 
-    background:rgba(58,110,165,.72);
+    background:rgba(214,231,247,.94);
 
     backdrop-filter:blur(24px);
 
@@ -1181,7 +1349,11 @@
 
     margin-bottom:28px;
 
-    text-shadow:0 2px 10px rgba(0,0,0,.3);
+    text-shadow:
+
+        0 1px 2px rgba(20,45,75,.55),
+
+        0 2px 14px rgba(20,45,75,.35);
 
 }
 
@@ -1208,7 +1380,7 @@
 
     flex:1;
 
-    border:1px solid rgba(255,255,255,.3);
+    border:1px solid rgba(30,60,95,.4);
 
     outline:none;
 
@@ -1235,27 +1407,27 @@
 
 .confirm-cancel{
 
-    background:rgba(255,255,255,.08);
+    background:rgba(30,60,95,.2);
 
 }
 
 
 .confirm-cancel:hover{
 
-    background:rgba(255,255,255,.16);
+    background:rgba(30,60,95,.32);
 
 }
 
 
 .confirm-continue{
 
-    background:rgba(255,255,255,.28);
+    background:rgba(30,60,95,.5);
 
 }
 
 
 .confirm-continue:hover{
 
-    background:rgba(255,255,255,.4);
+    background:rgba(30,60,95,.65);
 
 }
