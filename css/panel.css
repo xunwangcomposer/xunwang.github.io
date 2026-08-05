@@ -59,19 +59,19 @@
 
     inset:0;
 
-    background:rgba(201,225,243,.95);
+    background:rgba(255,255,255,.12);
 
-    backdrop-filter:blur(24px);
+    backdrop-filter:blur(30px);
 
-    -webkit-backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(30px);
 
-    border:1px solid rgba(255,255,255,.25);
+    border:1px solid rgba(255,255,255,.22);
 
     box-shadow:
 
-        0 30px 80px rgba(0,0,0,.30),
+        0 30px 80px rgba(0,0,0,.12),
 
-        inset 0 1px 1px rgba(255,255,255,.25);
+        inset 0 1px 1px rgba(255,255,255,.45);
 
 }
 
@@ -141,19 +141,13 @@
 
 .panel-text p{
 
-    color:rgba(255,255,255,.96);
+    color:#1c3f63;
 
     font-size:17px;
 
     line-height:1.9;
 
     margin-bottom:18px;
-
-    text-shadow:
-
-        0 1px 2px rgba(20,45,75,.55),
-
-        0 2px 14px rgba(20,45,75,.35);
 
 }
 
@@ -166,9 +160,7 @@
 
     text-transform:uppercase;
 
-    color:rgba(255,255,255,.95);
-
-    text-shadow:0 1px 3px rgba(20,45,75,.5);
+    color:rgba(28,63,99,.75);
 
     margin-bottom:10px;
 
@@ -181,7 +173,7 @@
 
     height:3px;
 
-    background:rgba(30,60,95,.45);
+    background:rgba(28,63,99,.45);
 
     border-radius:2px;
 
@@ -200,17 +192,11 @@
 
     font-weight:500;
 
-    color:#fff;
+    color:#1c3f63;
 
     letter-spacing:1px;
 
     margin:34px 0 14px;
-
-    text-shadow:
-
-        0 1px 2px rgba(20,45,75,.55),
-
-        0 2px 14px rgba(20,45,75,.3);
 
 }
 
@@ -235,13 +221,7 @@
 
     font-weight:600;
 
-    color:#fff;
-
-    text-shadow:
-
-        0 1px 2px rgba(20,45,75,.55),
-
-        0 2px 12px rgba(20,45,75,.3);
+    color:#1c3f63;
 
 }
 
@@ -250,11 +230,9 @@
 
     font-size:14px;
 
-    color:rgba(255,255,255,.88);
+    color:rgba(28,63,99,.75);
 
     margin:3px 0 10px;
-
-    text-shadow:0 1px 3px rgba(20,45,75,.45);
 
 }
 
@@ -278,17 +256,11 @@
 
     margin-bottom:10px;
 
-    color:rgba(255,255,255,.96);
+    color:#1c3f63;
 
     font-size:16px;
 
     line-height:1.7;
-
-    text-shadow:
-
-        0 1px 2px rgba(20,45,75,.5),
-
-        0 2px 12px rgba(20,45,75,.3);
 
 }
 
@@ -309,7 +281,7 @@
 
     border-radius:50%;
 
-    background:rgba(30,60,95,.6);
+    background:rgba(28,63,99,.55);
 
 }
 
@@ -329,11 +301,9 @@
 
     font-size:14px;
 
-    color:rgba(255,255,255,.85);
+    color:rgba(28,63,99,.7);
 
     margin-top:2px;
-
-    text-shadow:0 1px 3px rgba(20,45,75,.4);
 
 }
 
@@ -348,13 +318,7 @@
 
     font-weight:300;
 
-    color:white;
-
-    text-shadow:
-
-        0 1px 3px rgba(20,45,75,.55),
-
-        0 3px 18px rgba(20,45,75,.35);
+    color:#1c3f63;
 
     margin-bottom:40px;
 
@@ -397,7 +361,7 @@
 
     line-height:1;
 
-    background:rgba(30,60,95,.28);
+    background:rgba(28,63,99,.10);
 
     display:flex;
 
@@ -407,7 +371,7 @@
 
     cursor:pointer;
 
-    color:white;
+    color:#1c3f63;
 
     font-size:28px;
 
@@ -419,7 +383,7 @@
 
 .panel-close:hover{
 
-    background:rgba(30,60,95,.42);
+    background:rgba(28,63,99,.18);
 
 }
 
@@ -492,24 +456,9 @@
 
 
 /*==================================================
-    Background Gradient
+    (background now defined once above, matching
+    the glass-menu look)
 ==================================================*/
-
-.panel-glass{
-
-    background:
-
-        linear-gradient(
-
-            150deg,
-
-            rgba(201,225,243,.95),
-
-            rgba(201,225,243,.90)
-
-        );
-
-}
 
 
 /*==================================================
@@ -1094,15 +1043,19 @@
 
     text-align:center;
 
-    background:rgba(201,225,243,.95);
+    background:rgba(255,255,255,.14);
 
-    backdrop-filter:blur(24px);
+    backdrop-filter:blur(30px);
 
-    -webkit-backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(30px);
 
     border:1px solid rgba(255,255,255,.22);
 
-    box-shadow:0 30px 80px rgba(0,0,0,.35);
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.12),
+
+        inset 0 1px 1px rgba(255,255,255,.45);
 
     transform:translateY(12px) scale(.96);
 
@@ -1148,9 +1101,9 @@
 
     line-height:1;
 
-    background:rgba(30,60,95,.28);
+    background:rgba(28,63,99,.10);
 
-    color:white;
+    color:#1c3f63;
 
     font-size:22px;
 
@@ -1163,7 +1116,7 @@
 
 .email-modal-close:hover{
 
-    background:rgba(30,60,95,.42);
+    background:rgba(28,63,99,.18);
 
 }
 
@@ -1176,9 +1129,7 @@
 
     text-transform:uppercase;
 
-    color:rgba(255,255,255,.95);
-
-    text-shadow:0 1px 3px rgba(20,45,75,.5);
+    color:rgba(28,63,99,.75);
 
     margin-bottom:14px;
 
@@ -1189,24 +1140,18 @@
 
     font-size:20px;
 
-    color:#fff;
+    color:#1c3f63;
 
     word-break:break-all;
 
     margin-bottom:26px;
-
-    text-shadow:
-
-        0 1px 2px rgba(20,45,75,.55),
-
-        0 2px 14px rgba(20,45,75,.35);
 
 }
 
 
 .email-copy-btn{
 
-    border:1px solid rgba(30,60,95,.4);
+    border:1px solid rgba(28,63,99,.35);
 
     outline:none;
 
@@ -1218,9 +1163,9 @@
 
     border-radius:999px;
 
-    background:rgba(30,60,95,.22);
+    background:rgba(28,63,99,.08);
 
-    color:#fff;
+    color:#1c3f63;
 
     font-size:14px;
 
@@ -1235,14 +1180,14 @@
 
 .email-copy-btn:hover{
 
-    background:rgba(30,60,95,.34);
+    background:rgba(28,63,99,.16);
 
 }
 
 
 .email-copy-btn.copied{
 
-    background:rgba(30,60,95,.5);
+    background:rgba(28,63,99,.28);
 
 }
 
@@ -1256,7 +1201,7 @@
 
     height:1px;
 
-    background:rgba(30,60,95,.25);
+    background:rgba(28,63,99,.2);
 
     margin:26px 0;
 
@@ -1315,15 +1260,19 @@
 
     text-align:center;
 
-    background:rgba(201,225,243,.95);
+    background:rgba(255,255,255,.14);
 
-    backdrop-filter:blur(24px);
+    backdrop-filter:blur(30px);
 
-    -webkit-backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(30px);
 
     border:1px solid rgba(255,255,255,.22);
 
-    box-shadow:0 30px 80px rgba(0,0,0,.30);
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.12),
+
+        inset 0 1px 1px rgba(255,255,255,.45);
 
     transform:translateY(12px) scale(.96);
 
@@ -1341,19 +1290,13 @@
 
 .confirm-modal-text{
 
-    color:#fff;
+    color:#1c3f63;
 
     font-size:16px;
 
     line-height:1.7;
 
     margin-bottom:28px;
-
-    text-shadow:
-
-        0 1px 2px rgba(20,45,75,.55),
-
-        0 2px 14px rgba(20,45,75,.35);
 
 }
 
@@ -1380,7 +1323,7 @@
 
     flex:1;
 
-    border:1px solid rgba(30,60,95,.4);
+    border:1px solid rgba(28,63,99,.35);
 
     outline:none;
 
@@ -1396,7 +1339,7 @@
 
     letter-spacing:.5px;
 
-    color:#fff;
+    color:#1c3f63;
 
     cursor:pointer;
 
@@ -1407,28 +1350,32 @@
 
 .confirm-cancel{
 
-    background:rgba(30,60,95,.2);
+    background:rgba(28,63,99,.06);
 
 }
 
 
 .confirm-cancel:hover{
 
-    background:rgba(30,60,95,.32);
+    background:rgba(28,63,99,.14);
 
 }
 
 
 .confirm-continue{
 
-    background:rgba(30,60,95,.5);
+    background:#1c3f63;
+
+    border-color:#1c3f63;
+
+    color:#fff;
 
 }
 
 
 .confirm-continue:hover{
 
-    background:rgba(30,60,95,.65);
+    background:#183756;
 
 }
 
@@ -1439,11 +1386,11 @@
 
 .cv-link{
 
-    color:#fff;
+    color:#1c3f63;
 
     text-decoration:underline;
 
-    text-decoration-color:rgba(255,255,255,.55);
+    text-decoration-color:rgba(28,63,99,.5);
 
     text-underline-offset:3px;
 
@@ -1454,6 +1401,6 @@
 
 .cv-link:hover{
 
-    text-decoration-color:#fff;
+    text-decoration-color:#1c3f63;
 
 }
