@@ -59,11 +59,11 @@
 
     inset:0;
 
-    background:rgba(255,255,255,.12);
+    background:rgba(255,255,255,.32);
 
-    backdrop-filter:blur(30px);
+    backdrop-filter:blur(60px);
 
-    -webkit-backdrop-filter:blur(30px);
+    -webkit-backdrop-filter:blur(60px);
 
     border:1px solid rgba(255,255,255,.22);
 
@@ -1043,11 +1043,11 @@
 
     text-align:center;
 
-    background:rgba(255,255,255,.14);
+    background:rgba(255,255,255,.34);
 
-    backdrop-filter:blur(30px);
+    backdrop-filter:blur(60px);
 
-    -webkit-backdrop-filter:blur(30px);
+    -webkit-backdrop-filter:blur(60px);
 
     border:1px solid rgba(255,255,255,.22);
 
@@ -1260,11 +1260,11 @@
 
     text-align:center;
 
-    background:rgba(255,255,255,.14);
+    background:rgba(255,255,255,.34);
 
-    backdrop-filter:blur(30px);
+    backdrop-filter:blur(60px);
 
-    -webkit-backdrop-filter:blur(30px);
+    -webkit-backdrop-filter:blur(60px);
 
     border:1px solid rgba(255,255,255,.22);
 
