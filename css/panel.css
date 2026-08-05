@@ -1431,3 +1431,29 @@
     background:rgba(30,60,95,.65);
 
 }
+
+
+/*=============================
+    Inline links inside panel text
+=============================*/
+
+.cv-link{
+
+    color:#fff;
+
+    text-decoration:underline;
+
+    text-decoration-color:rgba(255,255,255,.55);
+
+    text-underline-offset:3px;
+
+    transition:.25s;
+
+}
+
+
+.cv-link:hover{
+
+    text-decoration-color:#fff;
+
+}
