@@ -85,8 +85,10 @@
 
 <header class="top-bar">
 
-    <button class="menu-button">
-
+   <button
+    class="menu-button"
+    aria-label="Open navigation">
+       
         <span></span>
 
         <span></span>
@@ -180,7 +182,7 @@
 
                     </a>
 
-                    <a href="mailto:your@email.com"
+                    <a href="mailto:xunwang0802@gmail.com"
                        aria-label="Email">
 
                         <i class="fa-regular fa-envelope"></i>
@@ -219,11 +221,13 @@
 
     <div class="panel-highlight"></div>
 
-    <div class="panel-close">
+   <button
+    class="panel-close"
+    aria-label="Close">
 
-        ×
+    &times;
 
-    </div>
+</button>
 
     <div class="panel-content">
 
@@ -340,8 +344,8 @@
     </div>
 
 </section>
-    
-</main>
+
+    </main>
 
 <!-- ========================= -->
 <!-- Scroll -->
@@ -374,7 +378,7 @@
 
 <audio id="backgroundMusic"
        loop
-       preload="auto">
+      preload="metadata"
 
     <source src="assets/audio/background.mp3"
             type="audio/mpeg">
