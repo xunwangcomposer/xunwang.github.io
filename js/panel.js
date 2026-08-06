@@ -372,6 +372,29 @@ function initLinkConfirm(){
 
 
 /*======================================
+    Open Panel From URL Hash
+    (so links like works.html -> index.html#biographyPanel
+    open the right popup automatically)
+======================================*/
+
+function initHashPanel(){
+
+    const id=window.location.hash.replace("#","");
+
+    if(!id) return;
+
+    const target=document.getElementById(id);
+
+    if(target&&target.classList.contains("panel-section")){
+
+        openPanel(id);
+
+    }
+
+}
+
+
+/*======================================
     Initialize
 ======================================*/
 
@@ -382,5 +405,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     initEmailModal();
 
     initLinkConfirm();
+
+    initHashPanel();
 
 });

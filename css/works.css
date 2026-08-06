@@ -1,0 +1,504 @@
+/*==================================================
+    Works Section (standalone pages)
+    Shares the site's color language (light blue,
+    glass cards, dark navy text) but is a normal
+    scrollable page, not a fixed-height hero.
+==================================================*/
+
+.works-body{
+
+    height:auto;
+
+    min-height:100vh;
+
+    overflow-y:auto;
+
+    background:#c8e1f3;
+
+}
+
+
+/*======================================
+    Top Bar
+======================================*/
+
+.works-topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:40px 32px 20px;
+
+}
+
+
+.works-logo{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:32px;
+
+    color:#1c3f63;
+
+    text-decoration:none;
+
+}
+
+
+.works-nav{
+
+    display:flex;
+
+    gap:28px;
+
+    list-style:none;
+
+}
+
+
+.works-nav a{
+
+    color:#1c3f63;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+    opacity:.75;
+
+    transition:.25s;
+
+}
+
+
+.works-nav a:hover,
+
+.works-nav a.active{
+
+    opacity:1;
+
+}
+
+
+/*======================================
+    Header
+======================================*/
+
+.works-header{
+
+    max-width:1100px;
+
+    margin:20px auto 10px;
+
+    padding:20px 32px 0;
+
+}
+
+
+.works-subtitle{
+
+    font-size:14px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:rgba(28,63,99,.65);
+
+    margin-bottom:10px;
+
+}
+
+
+.works-title{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:500;
+
+    font-size:56px;
+
+    color:#1c3f63;
+
+    margin-bottom:18px;
+
+}
+
+
+.works-divider{
+
+    width:60px;
+
+    height:3px;
+
+    border-radius:2px;
+
+    background:rgba(28,63,99,.4);
+
+    margin-bottom:24px;
+
+}
+
+
+.works-intro{
+
+    max-width:640px;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:rgba(28,63,99,.85);
+
+}
+
+
+/*======================================
+    Works Grid
+======================================*/
+
+.works-grid{
+
+    max-width:1100px;
+
+    margin:40px auto 100px;
+
+    padding:0 32px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+
+    gap:24px;
+
+}
+
+
+.work-card{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    padding:30px 28px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.32);
+
+    backdrop-filter:blur(40px);
+
+    -webkit-backdrop-filter:blur(40px);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    box-shadow:
+
+        0 20px 50px rgba(28,63,99,.10),
+
+        inset 0 1px 1px rgba(255,255,255,.5);
+
+    transition:transform .35s ease, box-shadow .35s ease;
+
+}
+
+
+.work-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+
+        0 30px 60px rgba(28,63,99,.16),
+
+        inset 0 1px 1px rgba(255,255,255,.5);
+
+}
+
+
+.work-card-number{
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    color:rgba(28,63,99,.5);
+
+    margin-bottom:14px;
+
+}
+
+
+.work-card-title{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:26px;
+
+    font-weight:600;
+
+    color:#1c3f63;
+
+    margin-bottom:10px;
+
+    line-height:1.3;
+
+}
+
+
+.work-card-meta{
+
+    font-size:14px;
+
+    color:rgba(28,63,99,.7);
+
+    line-height:1.6;
+
+}
+
+
+.work-card-year{
+
+    display:inline-block;
+
+    margin-top:16px;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    color:rgba(28,63,99,.55);
+
+}
+
+
+/*======================================
+    Individual Work Page
+======================================*/
+
+.work-detail{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    padding:120px 32px 120px;
+
+}
+
+
+.work-back{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#1c3f63;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    letter-spacing:.5px;
+
+    opacity:.75;
+
+    margin-bottom:50px;
+
+    transition:.25s;
+
+}
+
+
+.work-back:hover{
+
+    opacity:1;
+
+}
+
+
+.work-detail-subtitle{
+
+    font-size:14px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:rgba(28,63,99,.6);
+
+    margin-bottom:14px;
+
+}
+
+
+.work-detail-title{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-weight:500;
+
+    font-size:48px;
+
+    line-height:1.25;
+
+    color:#1c3f63;
+
+    margin-bottom:20px;
+
+}
+
+
+.work-detail-meta{
+
+    font-size:16px;
+
+    color:rgba(28,63,99,.75);
+
+    margin-bottom:36px;
+
+}
+
+
+.work-detail-divider{
+
+    width:60px;
+
+    height:3px;
+
+    border-radius:2px;
+
+    background:rgba(28,63,99,.4);
+
+    margin-bottom:36px;
+
+}
+
+
+.work-detail-card{
+
+    padding:40px 36px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.32);
+
+    backdrop-filter:blur(40px);
+
+    -webkit-backdrop-filter:blur(40px);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    box-shadow:
+
+        0 20px 50px rgba(28,63,99,.10),
+
+        inset 0 1px 1px rgba(255,255,255,.5);
+
+}
+
+
+.work-detail-placeholder{
+
+    font-size:16px;
+
+    line-height:1.85;
+
+    color:rgba(28,63,99,.75);
+
+}
+
+
+.work-nav-links{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:60px;
+
+    font-size:14px;
+
+}
+
+
+.work-nav-links a{
+
+    color:#1c3f63;
+
+    text-decoration:none;
+
+    opacity:.75;
+
+    transition:.25s;
+
+}
+
+
+.work-nav-links a:hover{
+
+    opacity:1;
+
+}
+
+
+/*======================================
+    Responsive
+======================================*/
+
+@media (max-width:600px){
+
+    .works-title{
+
+        font-size:38px;
+
+    }
+
+    .work-detail-title{
+
+        font-size:32px;
+
+    }
+
+    .work-detail{
+
+        padding:100px 22px 90px;
+
+    }
+
+    .works-topbar{
+
+        padding:28px 22px 10px;
+
+    }
+
+    .works-header{
+
+        padding:14px 22px 0;
+
+    }
+
+    .works-grid{
+
+        padding:0 22px;
+
+    }
+
+}
