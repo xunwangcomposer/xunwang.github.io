@@ -162,7 +162,48 @@
 
     line-height:2;
 
+    text-align:center;
+
     color:#1c3f63;
+
+    margin-bottom:28px;
+
+}
+
+
+.work-program-note:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+.work-program-note-label{
+
+    font-family:"Inter",sans-serif;
+
+    font-style:normal;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-align:center;
+
+    text-transform:uppercase;
+
+    color:rgba(28,63,99,.6);
+
+    margin:36px 0 18px;
+
+}
+
+
+.work-program-note-label:first-child{
+
+    margin-top:0;
 
 }
 
@@ -653,6 +694,12 @@
 ======================================*/
 
 @media (max-width:600px){
+
+    .work-program-note{
+
+        font-size:17px;
+
+    }
 
     .works-title{
 
