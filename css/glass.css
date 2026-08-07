@@ -14,13 +14,13 @@
 
     overflow:hidden;
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(30px);
 
-    -webkit-backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(30px);
 
-    background:rgba(255,255,255,.10);
+    background:rgba(255,255,255,.20);
 
-    border:1px solid rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.22);
 
     border-radius:30px;
 
