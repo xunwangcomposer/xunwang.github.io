@@ -373,7 +373,7 @@ function initLinkConfirm(){
 
 /*======================================
     Open Panel From URL Hash
-    (so links like works.html -> index.html#biographyPanel
+    (so a link like works.html#cvPanel -> index.html would still
     open the right popup automatically)
 ======================================*/
 

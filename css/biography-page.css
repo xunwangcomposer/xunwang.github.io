@@ -1,0 +1,174 @@
+/*==================================================
+    Biography Page (standalone)
+==================================================*/
+
+.bio-page .works-subtitle.reveal{transition-delay:.05s;}
+.bio-page .works-title.reveal{transition-delay:.12s;}
+.bio-image.reveal{transition-delay:.20s;}
+.bio-text.reveal{transition-delay:.30s;}
+
+
+.bio-page{
+
+    max-width:920px;
+
+    margin:20px auto 140px;
+
+    padding:20px 32px 0;
+
+}
+
+
+.bio-card{
+
+    margin-top:40px;
+
+    padding:44px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.32);
+
+    backdrop-filter:blur(50px);
+
+    -webkit-backdrop-filter:blur(50px);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    box-shadow:
+
+        0 20px 50px rgba(28,63,99,.10),
+
+        inset 0 1px 1px rgba(255,255,255,.5);
+
+}
+
+
+.bio-layout{
+
+    display:flex;
+
+    gap:48px;
+
+    align-items:flex-start;
+
+}
+
+
+.bio-image{
+
+    flex:0 0 260px;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(28,63,99,.18);
+
+}
+
+
+.bio-image img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+.bio-text{
+
+    flex:1;
+
+    min-width:0;
+
+}
+
+
+.bio-text p{
+
+    color:#3a5878;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:22px;
+
+}
+
+
+.bio-text p:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+.bio-link{
+
+    color:#1c3f63;
+
+    font-weight:600;
+
+    text-decoration:underline;
+
+    text-decoration-color:rgba(28,63,99,.4);
+
+    text-underline-offset:3px;
+
+    transition:.25s;
+
+}
+
+
+.bio-link:hover{
+
+    text-decoration-color:#1c3f63;
+
+}
+
+
+/*======================================
+    Responsive
+======================================*/
+
+@media (max-width:700px){
+
+    .bio-layout{
+
+        flex-direction:column;
+
+    }
+
+    .bio-image{
+
+        flex:0 0 auto;
+
+        width:100%;
+
+        max-width:280px;
+
+        margin:0 auto;
+
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    .bio-page{
+
+        padding:14px 22px 0;
+
+    }
+
+    .bio-card{
+
+        padding:28px 24px;
+
+    }
+
+}
