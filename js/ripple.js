@@ -21,7 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lastSpawn = 0;
 
-    const SPAWN_INTERVAL = 60; // ms between ripples while moving
+    let nextInterval = randomBetween(40, 160);
+
+
+    function randomBetween(min, max) {
+
+        return min + Math.random() * (max - min);
+
+    }
 
 
     function spawnRipple(x, y) {
@@ -29,8 +36,24 @@ document.addEventListener("DOMContentLoaded", () => {
         const dot = document.createElement("div");
 
         dot.className = "ripple-dot";
-        dot.style.left = x + "px";
-        dot.style.top = y + "px";
+
+        // random jitter so ripples don't trace a perfectly even line
+        const jitterX = randomBetween(-10, 10);
+        const jitterY = randomBetween(-10, 10);
+
+        dot.style.left = (x + jitterX) + "px";
+        dot.style.top = (y + jitterY) + "px";
+
+        // random size and duration for a less uniform, more organic feel
+        const size = randomBetween(8, 26);
+
+        dot.style.width = size + "px";
+        dot.style.height = size + "px";
+        dot.style.marginLeft = (-size / 2) + "px";
+        dot.style.marginTop = (-size / 2) + "px";
+
+        dot.style.animationDuration = randomBetween(0.8, 1.6) + "s";
+        dot.style.setProperty("--peak-opacity", randomBetween(0.5, 0.95));
 
         layer.appendChild(dot);
 
@@ -46,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (dot.parentNode) dot.remove();
 
-        }, 2000);
+        }, 2200);
 
     }
 
@@ -55,11 +78,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const now = performance.now();
 
-        if (now - lastSpawn > SPAWN_INTERVAL) {
+        if (now - lastSpawn > nextInterval) {
 
             spawnRipple(x, y);
 
             lastSpawn = now;
+            nextInterval = randomBetween(40, 160);
 
         }
 
