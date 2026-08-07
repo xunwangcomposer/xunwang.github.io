@@ -19,6 +19,77 @@
 
 
 /*======================================
+    Scroll Reveal
+    (from-bottom fade-up entrance)
+======================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(42px);
+
+    transition:opacity .9s cubic-bezier(.22,.61,.36,1),
+
+               transform .9s cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+.reveal.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+@media (prefers-reduced-motion: reduce){
+
+    .reveal{
+
+        opacity:1;
+
+        transform:none;
+
+        transition:none;
+
+    }
+
+}
+
+
+/* Staggered entrance for grid cards */
+
+.works-grid .work-card:nth-child(1){transition-delay:.05s;}
+.works-grid .work-card:nth-child(2){transition-delay:.10s;}
+.works-grid .work-card:nth-child(3){transition-delay:.15s;}
+.works-grid .work-card:nth-child(4){transition-delay:.20s;}
+.works-grid .work-card:nth-child(5){transition-delay:.25s;}
+.works-grid .work-card:nth-child(6){transition-delay:.30s;}
+.works-grid .work-card:nth-child(7){transition-delay:.35s;}
+.works-grid .work-card:nth-child(8){transition-delay:.40s;}
+.works-grid .work-card:nth-child(9){transition-delay:.45s;}
+.works-grid .work-card:nth-child(10){transition-delay:.50s;}
+.works-grid .work-card:nth-child(11){transition-delay:.55s;}
+.works-grid .work-card:nth-child(12){transition-delay:.60s;}
+
+
+/* Sequenced entrance for page chrome + detail page elements */
+
+.works-topbar.reveal{transition-delay:0s;}
+.works-header.reveal{transition-delay:.12s;}
+
+.work-back.reveal{transition-delay:.05s;}
+.work-detail-subtitle.reveal{transition-delay:.12s;}
+.work-detail-title.reveal{transition-delay:.20s;}
+.work-detail-meta.reveal{transition-delay:.28s;}
+.work-detail-card.reveal{transition-delay:.36s;}
+.work-nav-links.reveal{transition-delay:.44s;}
+
+
+/*======================================
     Top Bar
 ======================================*/
 
