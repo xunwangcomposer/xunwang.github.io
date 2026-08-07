@@ -85,8 +85,126 @@
 .work-detail-subtitle.reveal{transition-delay:.12s;}
 .work-detail-title.reveal{transition-delay:.20s;}
 .work-detail-meta.reveal{transition-delay:.28s;}
-.work-detail-card.reveal{transition-delay:.36s;}
-.work-nav-links.reveal{transition-delay:.44s;}
+.work-video.reveal{transition-delay:.34s;}
+.work-detail-card.reveal{transition-delay:.42s;}
+.work-nav-links.reveal{transition-delay:.50s;}
+
+
+/*======================================
+    Video Embed
+======================================*/
+
+.work-video{
+
+    position:relative;
+
+    width:100%;
+
+    padding-top:56.25%;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(28,63,99,.15);
+
+}
+
+
+.work-video iframe{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+}
+
+
+/*======================================
+    Programme Note
+======================================*/
+
+.work-section-label{
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:rgba(28,63,99,.6);
+
+    margin:44px 0 16px;
+
+}
+
+
+.work-section-label:first-child{
+
+    margin-top:0;
+
+}
+
+
+.work-program-note{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:20px;
+
+    font-style:italic;
+
+    line-height:2;
+
+    color:#1c3f63;
+
+}
+
+
+/*======================================
+    Review / Adjudicator Feedback
+======================================*/
+
+.work-review{
+
+    font-size:15.5px;
+
+    line-height:1.85;
+
+    color:#3a5878;
+
+}
+
+
+.work-review p{
+
+    margin-bottom:18px;
+
+}
+
+
+.work-review p:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+.work-review-signoff{
+
+    margin-top:26px;
+
+    font-style:italic;
+
+    color:rgba(28,63,99,.75);
+
+}
 
 
 /*======================================
