@@ -35,3 +35,26 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach((el) => observer.observe(el));
 
 });
+
+
+/*======================================
+    Works Index Toggle (mobile)
+======================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const toggle = document.getElementById("worksTocToggle");
+
+    const sidebar = document.getElementById("worksTocSidebar");
+
+    if (!toggle || !sidebar) return;
+
+    toggle.addEventListener("click", () => {
+
+        sidebar.classList.toggle("open");
+
+        toggle.classList.toggle("open");
+
+    });
+
+});

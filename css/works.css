@@ -249,6 +249,203 @@
 
 
 /*======================================
+    Work Detail Layout
+    (sidebar index + main content)
+======================================*/
+
+.work-detail-layout{
+
+    max-width:1040px;
+
+    margin:0 auto;
+
+    padding:100px 32px 120px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:56px;
+
+}
+
+
+.work-detail-layout .work-detail{
+
+    max-width:none;
+
+    flex:1;
+
+    min-width:0;
+
+    padding:0;
+
+}
+
+
+/*======================================
+    Works TOC Sidebar (desktop)
+======================================*/
+
+.work-toc-sidebar{
+
+    width:230px;
+
+    flex-shrink:0;
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+
+.work-toc-label{
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:rgba(28,63,99,.55);
+
+    margin-bottom:16px;
+
+}
+
+
+.work-toc-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.work-toc-list a{
+
+    display:flex;
+
+    gap:10px;
+
+    padding:10px 0;
+
+    text-decoration:none;
+
+    color:rgba(28,63,99,.65);
+
+    font-size:14px;
+
+    line-height:1.4;
+
+    border-left:2px solid transparent;
+
+    padding-left:14px;
+
+    margin-left:-14px;
+
+    transition:.25s;
+
+}
+
+
+.work-toc-list a:hover{
+
+    color:#1c3f63;
+
+}
+
+
+.work-toc-list a .work-toc-num{
+
+    flex-shrink:0;
+
+    opacity:.6;
+
+    font-variant-numeric:tabular-nums;
+
+}
+
+
+.work-toc-list a.current{
+
+    color:#1c3f63;
+
+    font-weight:600;
+
+    border-left-color:#1c3f63;
+
+}
+
+
+/*======================================
+    Works TOC Toggle (mobile)
+======================================*/
+
+.work-toc-toggle{
+
+    display:none;
+
+    width:100%;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:16px 20px;
+
+    border:none;
+
+    outline:none;
+
+    appearance:none;
+
+    -webkit-appearance:none;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.32);
+
+    backdrop-filter:blur(30px);
+
+    -webkit-backdrop-filter:blur(30px);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    color:#1c3f63;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    cursor:pointer;
+
+}
+
+
+.work-toc-toggle .work-toc-arrow{
+
+    transition:transform .3s ease;
+
+    font-size:12px;
+
+}
+
+
+.work-toc-toggle.open .work-toc-arrow{
+
+    transform:rotate(180deg);
+
+}
+
+
+/*======================================
     Top Bar
 ======================================*/
 
@@ -695,6 +892,60 @@
 
 @media (max-width:600px){
 
+    .work-detail-layout{
+
+        flex-direction:column;
+
+        padding:100px 22px 90px;
+
+        gap:0;
+
+    }
+
+    .work-detail-layout .work-detail{
+
+        padding:0;
+
+    }
+
+    .work-toc-toggle{
+
+        display:flex;
+
+        margin-bottom:28px;
+
+    }
+
+    .work-toc-sidebar{
+
+        position:static;
+
+        width:100%;
+
+        display:none;
+
+        margin-bottom:32px;
+
+        padding:18px 20px 6px;
+
+        border-radius:16px;
+
+        background:rgba(255,255,255,.32);
+
+        backdrop-filter:blur(30px);
+
+        -webkit-backdrop-filter:blur(30px);
+
+        border:1px solid rgba(255,255,255,.4);
+
+    }
+
+    .work-toc-sidebar.open{
+
+        display:block;
+
+    }
+
     .work-program-note{
 
         font-size:17px;
@@ -710,12 +961,6 @@
     .work-detail-title{
 
         font-size:32px;
-
-    }
-
-    .work-detail{
-
-        padding:100px 22px 90px;
 
     }
 
