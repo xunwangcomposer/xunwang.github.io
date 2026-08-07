@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let lastSpawn = 0;
 
-    const SPAWN_INTERVAL = 55;   // ms between ripples while moving
-    const MAX_RADIUS = 130;
-    const GROWTH = 1.6;
-    const FADE = 0.012;
+    const SPAWN_INTERVAL = 45;   // ms between ripples while moving
+    const MAX_RADIUS = 150;
+    const GROWTH = 1.8;
+    const FADE = 0.010;
 
 
     function resize() {
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             x,
             y,
             radius: 0,
-            opacity: 0.32
+            opacity: 0.55
 
         });
 
@@ -114,19 +114,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (r.opacity <= 0) return;
 
-            const gradient = ctx.createRadialGradient(
-                r.x, r.y, Math.max(r.radius - 8, 0),
-                r.x, r.y, r.radius
-            );
-
-            gradient.addColorStop(0, "rgba(255,255,255,0)");
-            gradient.addColorStop(0.85, `rgba(255,255,255,${r.opacity})`);
-            gradient.addColorStop(1, "rgba(255,255,255,0)");
-
+            // soft outer glow (blue-tinted, wide and faint)
             ctx.beginPath();
             ctx.arc(r.x, r.y, r.radius, 0, Math.PI * 2);
-            ctx.strokeStyle = gradient;
-            ctx.lineWidth = 1.4;
+            ctx.strokeStyle = `rgba(143,195,234,${r.opacity * 0.9})`;
+            ctx.lineWidth = 4;
+            ctx.stroke();
+
+            // crisp inner ring (white, thinner, brighter)
+            ctx.beginPath();
+            ctx.arc(r.x, r.y, r.radius, 0, Math.PI * 2);
+            ctx.strokeStyle = `rgba(255,255,255,${r.opacity})`;
+            ctx.lineWidth = 1.6;
             ctx.stroke();
 
         });
